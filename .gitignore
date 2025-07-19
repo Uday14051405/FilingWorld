@@ -4,6 +4,7 @@ node_modules
 /storage/*.key
 /vendor
 .env
+/public/json/firebase_notification.json
 .env.backup
 .phpunit.result.cache
 docker-compose.override.yml
