@@ -1,62 +1,86 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+# FilingWorld – Digital Compliance & Filing Platform (Portfolio Project)
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+[![Laravel](https://img.shields.io/badge/Laravel-10-red)](https://laravel.com)
+[![PHP](https://img.shields.io/badge/PHP-8.2-blue)](https://www.php.net/)
+[![Status](https://img.shields.io/badge/Status-Completed-brightgreen)]()
 
-## About Laravel
+**FilingWorld** is a **Laravel-based digital platform** offering **end-to-end legal, tax, and business compliance solutions**.  
+It simplifies processes like **GST filing, Income Tax Returns, MCA compliance, trademark registration, and other regulatory services** for entrepreneurs, startups, and businesses.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+This repository is part of my **professional portfolio**, showcasing my work on backend development, API creation, and compliance workflows during my professional experience.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+---
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## 📋 Project Overview
+- **Goal:** Provide a one-stop platform for legal, tax, and regulatory filings.
+- **Core Services:**  
+  - GST filing, ITR filing  
+  - Company registration & MCA compliance  
+  - Trademark & FSSAI license services  
+  - 100+ government and legal services under one platform  
+- **Key Highlights:**  
+  - Automated compliance processes  
+  - Easy-to-use digital forms  
+  - Secure document storage
 
-## Learning Laravel
+---
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+## 🚀 Features
+- **Dynamic Service Booking** – End-to-end flow for government filings and services.
+- **Role-Based Access** – Separate panels for Admin, CA, Legal Experts, and Customers.
+- **Automated Notifications** – Filing updates via email/SMS.
+- **Secure Document Upload** – Encrypted storage of legal documents.
+- **Payment Gateway Integration** – For service charges and subscriptions.
+- **Multi-step Forms** – For easy GST/ITR/trademark applications.
+- **Reports & Tracking** – Customers can track status of their filings.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+---
 
-## Laravel Sponsors
+## 🛠 Tech Stack
+- **Backend:** Laravel 10
+- **Frontend:** Blade Templates + Bootstrap
+- **Database:** MySQL
+- **Payment Gateway:** Razorpay (or chosen gateway)
+- **Authentication:** Laravel Sanctum
+- **Deployment:** Apache/Nginx on Linux server
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+---
 
-### Premium Partners
+## 💼 My Role & Contributions
+- Designed **service flow architecture** for GST, ITR, and company registration modules.
+- Built **RESTful APIs** for filing services and customer dashboards.
+- Developed **dynamic multi-step forms** with backend validations.
+- Integrated **Razorpay payment gateway** for service payments.
+- Worked on **admin panel & service management system**.
+- Contributed to **database design, optimization, and reporting modules**.
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/)**
-- **[OP.GG](https://op.gg)**
+---
 
-## Contributing
+## 🔄 Service Booking Flow
+1. **Service Selection**  
+   - User browses services (GST filing, ITR, MCA, etc.) and selects required one.
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+2. **Customer Registration/Login**  
+   - User creates an account or logs in.
 
-## Code of Conduct
+3. **Form Submission & Document Upload**  
+   - Multi-step form with validations for user details and documents.
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+4. **Payment Gateway Checkout**  
+   - Secure payment for the chosen service.
 
-## Security Vulnerabilities
+5. **Backend Processing**  
+   - Admin/Experts review the application and process compliance.
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+6. **Status Updates**  
+   - Customer receives email/SMS notifications at each stage.
 
-## License
+7. **Completion & Report Download**  
+   - Final filing report or acknowledgment is generated for customer download.
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+---
+
+## 📄 License
+This repository is shared for **portfolio purposes only**. It is not an open-source product and does not include proprietary company data.
+
+---
