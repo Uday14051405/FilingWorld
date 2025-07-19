@@ -30,13 +30,32 @@ return new class extends Migration
                 'type' => 'theme-setup',
                 'value' => NULL,
             ),
-            2 =>
-            array (
+            2 => [
                 'id' => 3,
                 'key' => 'site-setup',
                 'type' => 'site-setup',
-                'value' =>'{"date_format":"F j, Y","time_format":"g:i A","time_zone":"Asia/Kolkata","language_option":["ar","nl","en","fr","de","hi","it","ar"],"default_currency":"231","currency_position":"left","google_map_keys":"AIzaSyCtTed7y_ePqg1QoDMHOyu01FtP_Ot-mDU","latitude":null,"longitude":null,"distance_type":"km","radious":"50","digitafter_decimal_point":"2","android_app_links":1,"playstore_url":"https://play.google.com/store/apps/details?id=com.iqonic.servicebooking","provider_playstore_url":"https://play.google.com/store/apps/details?id=com.iqonic.provider","ios_app_links":1,"appstore_url":"https://apps.apple.com/us/app/handyman-service-user/id1591427211","provider_appstore_url":"https://apps.apple.com/in/app/handyman-provider-app/id1596025324","site_copyright":"© 2024 All Rights Reserved by IQONIC Design"}',
-            ),
+                'value' => json_encode([
+                    'date_format' => 'F j, Y',
+                    'time_format' => 'g:i A',
+                    'time_zone' => 'Asia/Kolkata',
+                    'language_option' => ['ar', 'nl', 'en', 'fr', 'de', 'hi', 'it', 'ar'],
+                    'default_currency' => '231',
+                    'currency_position' => 'left',
+                    'google_map_keys' => env('GOOGLE_MAPS_API_KEY'),
+                    'latitude' => null,
+                    'longitude' => null,
+                    'distance_type' => 'km',
+                    'radious' => '50',
+                    'digitafter_decimal_point' => '2',
+                    'android_app_links' => 1,
+                    'playstore_url' => 'https://play.google.com/store/apps/details?id=com.iqonic.servicebooking',
+                    'provider_playstore_url' => 'https://play.google.com/store/apps/details?id=com.iqonic.provider',
+                    'ios_app_links' => 1,
+                    'appstore_url' => 'https://apps.apple.com/us/app/handyman-service-user/id1591427211',
+                    'provider_appstore_url' => 'https://apps.apple.com/in/app/handyman-provider-app/id1596025324',
+                    'site_copyright' => '© 2024 All Rights Reserved by IQONIC Design',
+                ]),
+            ],
             3 =>
             array (
                 'id' => 4,
